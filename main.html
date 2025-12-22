@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Новогодний стол</title>
-    <h2>Традиционные блюда Новогоднего застолья</h2>
-    <img src="foto/Стол.jpg" width=200px alt="изображение праздничного стола">
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Первый сайт</title>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table bgcolor="pink" aligh="centre" border="2px" height="300px" width="800px">
-	    <tr>
-		    <th>Название блюда</th>
-		    <th>Рецепт</th>
-		    <th>Фотография</th>
-	    </tr>
-         <tr>
-		    <td>Оливье</td>
-		    <td><a href="https://www.gastronom.ru/recipe/44760/salat-olive-klassicheskij-s-kolbasoj>"target="_blank">рецепт оливье</a></td>
-		    <td><img src="foto/оливье.jpg" width=300px alt="изображение оливье"></td>
-	    </tr>
-		</tr>
-		    <td>Холодец</td>
-            <td><a href="https://www.russianfood.com/recipes/bytype/?fid=471>"target="_blank">рецепт холодца</a></td>
-		    <td><img src="foto/холодец.jpg" width=300px alt="изображение холодца"></td>
-	    </tr>
-		</tr>
-		    <td>Утка в яблоках</td>
-		    <td><a href="https://www.russianfood.com/recipes/bytype/?fid=1110>"target="_blank">рецепт холодца</a></td>
-		    <td><img src="foto/Утка.jpg" width=300px alt="изображение утки"></td>
-	    </tr>
-    </table>
+
+    <div class="cards-container">
+
+        <div class="card">
+            <div class="photo">
+                <img src="foto/Волк.png" class="card-image">
+            </div>
+            <div class="info">
+                <h1>Волк</h1>
+                <p class="text">ФИО: Серый Волк (отчества нет) </p>
+                <p class="text">E-mail: АнукаНАпиши@Forest.com </p>
+                <p class="text">Дата рождения: Прошлый век </p>
+                <p class="text">Место жительства: Дремучий лес. За оврагом </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="photo">
+                <img src="foto/Лиса.png" class="card-image">
+            </div>
+            <div class="info">
+                <h1>Лиса</h1>
+                <p class="text">ФИО: Лиса Патрикеевна (фамилии нет) </p>
+                <p class="text">E-mail: ВсемОтвечу@Forest.com </p>
+                <p class="text">Дата рождения: Я еще молодая </p>
+                <p class="text">Место жительства: Дремучий лес. Между оврагом и опушкой </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="photo">
+                <img src="foto/Заяц.png" class="card-image">
+            </div>
+            <div class="info">
+                <h1>Заяц</h1>
+                <p class="text">ФИО: Зайчик Попрыгайчик (отчества нет) </p>
+                <p class="text">E-mail: ЧитатьНеУмею@Forest.com </p>
+                <p class="text">Дата рождения: Совсем недавно </p>
+                <p class="text">Место жительства: Дремучий лес. На опушке </p>
+            </div>
+        </div>
+
+    </div> <!-- Конец .cards-container -->
+
 </body>
-</html>

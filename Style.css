@@ -1,0 +1,62 @@
+.cards-container {
+  display: flex;          /* Включаем Flexbox */
+  justify-content: center; /* Выравниваем карточки по центру контейнера */
+  gap: 20px;              /* Расстояние между карточками */
+  flex-wrap: wrap;        /* Если экран маленький, карточки перенесутся на новую строку */
+  padding: 20px;          /* Отступ от края страницы */
+}
+
+/* Остальные стили оставь как есть */
+.card {
+  width: 600px;
+  height: 850px;
+  background-color: burlywood;
+  border-radius: 60px;
+  lex-shrink: 0; /* Не даем карточкам сжиматься при уменьшении экрана */
+}
+
+.photo {
+  /* Можно оставить пустым или задать другие стили, например, padding */
+}
+
+img {
+  width: 500px;
+  height: auto; /* Сохраняет пропорции! */
+  border-radius: 20px;
+  position: relative;
+  left: 10%;
+}
+
+.text {
+    background-color: olivedrab;
+    font-size: 26px
+}
+/* Для увеличения карточки при наведении мышки */
+.card {
+  width: 600px;
+  height: 850px;
+  background-color: burlywood;
+  border-radius: 60px;
+  flex-shrink: 0;
+
+  /* Плавная анимация при наведении */
+  transition: transform 0.3s ease;
+
+  /* Необязательно, но улучшает внешний вид при увеличении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Эффект при наведении мыши */
+.card:hover {
+  transform: scale(1.05); /* Увеличиваем на 5% */
+  z-index: 10;            /* Чтобы увеличенная карточка была поверх соседей */
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  /* НЕ ДОБАВЛЯЙ overflow: hidden; сюда! */
+}
